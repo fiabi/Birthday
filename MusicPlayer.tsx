@@ -97,14 +97,14 @@ export const MusicPlayer: React.FC = () => {
       
       {/* Tamil Birthday Song - Using a placeholder URL that would work with proper audio file */}
       <audio
-  ref={audioRef}
-  preload="auto"
-  onEnded={() => setIsPlaying(false)}
-  onError={(e) => console.log('Audio error:', e)}
->
-  <source src="/remo-birthday.mp3" type="audio/mpeg" />
-  Your browser does not support the audio element.
-</audio>
+      ref={audioRef}
+      preload="auto"
+      onEnded={() => setIsPlaying(false)}
+      onError={(e) => console.log('Audio error:', e)}
+      >
+      <source src="/remo-birthday.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
 
     </div>
   );
