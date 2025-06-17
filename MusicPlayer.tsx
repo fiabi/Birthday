@@ -97,17 +97,15 @@ export const MusicPlayer: React.FC = () => {
       
       {/* Tamil Birthday Song - Using a placeholder URL that would work with proper audio file */}
       <audio
-        ref={audioRef}
-        preload="auto"
-        onEnded={() => setIsPlaying(false)}
-        onError={(e) => console.log('Audio error:', e)}
-      >
-        {/* Note: You'll need to replace these with actual Tamil birthday song URLs */}
-        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" type="audio/mpeg" />
-        <source src="https://actions.google.com/sounds/v1/ambiences/medium_rain_on_leaves.ogg" type="audio/ogg" />
-        {/* Fallback for browsers that don't support the above formats */}
-        Your browser does not support the audio element.
-      </audio>
+  ref={audioRef}
+  preload="auto"
+  onEnded={() => setIsPlaying(false)}
+  onError={(e) => console.log('Audio error:', e)}
+>
+  <source src="/remo-birthday.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
     </div>
   );
 };
