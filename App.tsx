@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { AuroraBackground } from './components/AuroraBackground';
+import { AuroraBackground } from './AuroraBackground';
 import { HomePage } from './components/HomePage';
 import { PuzzleGameOne } from './components/PuzzleGameOne';
 import { PuzzleGameTwo } from './components/PuzzleGameTwo';
